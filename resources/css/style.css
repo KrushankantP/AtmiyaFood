@@ -9,8 +9,8 @@
 }
 html{
     background-color: whitesmoke;
-    color: #202e54 ;
-    font-weight: 300;
+    color: #2d3838 ;
+    font-weight: normal;
     font-family: 'Lato', 'Arial', sans-serif;
     font-size:20px;
     text-rendering: optimizeLegibility;
@@ -36,7 +36,7 @@ h1,
 h2,
 h3{
 
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -274,6 +274,7 @@ MEALS
 }
 .works-step div{
     color:#ba923c;
+
     border: 2px solid #ba923c;
     display: inline-block;
     border-radius: 50%;
@@ -285,6 +286,7 @@ MEALS
     font-size: 150%;
     margin-right: 25px;
 }
+
 .btn-app:link,
 .btn-app:visited{
     border: 0;
@@ -307,3 +309,42 @@ MEALS
 .city-feature{
     margin-bottom: 5px;
 }
+
+/* --------------------------------------------------
+    TESTIMONIALS
+----------------------------------------------------*/
+.section-testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(css-img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    font-weight: lighter;
+    line-height: 145%;
+    position: relative;
+    margin-top:40px;
+}
+ blockquote:before{
+     content: "\201C";
+     font-size: 500%;
+     display: block;
+     position:absolute;
+     top: -5px;
+     left: -3px;
+ }
+cite{
+    font-size: 90%;
+    margin-top:25px;
+    display: block;
+}
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
