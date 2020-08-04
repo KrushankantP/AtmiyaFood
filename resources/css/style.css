@@ -7,13 +7,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+html,
+body {
     background-color: whitesmoke;
     color: #2d3838 ;
     font-weight: normal;
     font-family: 'Lato', 'Arial', sans-serif;
     font-size:20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+
 }
 .clearfix {zoom:1}
 .clearfix:after {
@@ -280,12 +283,11 @@ MEALS
 }
 .works-step div{
     color:#ba923c;
-
     border: 2px solid #ba923c;
     display: inline-block;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 54px;
+    width: 54px;
     text-align: center;
     padding:5px;
     float: left;
