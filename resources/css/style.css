@@ -134,6 +134,7 @@ a:active{
 .btn-full:visited{
     background-color: #ba923c;
     border:1px solid #ba923c;
+    font-weight: normal;
     color: #ffffff;
     margin-right: 15px;
 }
@@ -142,6 +143,7 @@ a:active{
 .btn-outline:visited{
     border:1px solid #ba923c;
     color: #ba923c;
+    font-weight: normal;
 }
 
 .btn:hover,
@@ -347,4 +349,49 @@ cite img{
     vertical-align: middle;
 }
 
+/* --------------------------------------------------
+    SIGN UP
+----------------------------------------------------*/
+.section-plans{
+    background-color:whitesmoke;
+}
+.plan-box{
+    background-color: white;
+    border-radius: 5px;
+    width:90%;
+    margin-left: 5%;
+    box-shadow: 0 1px 1px dimgray;
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #ba923c;
+}
+.plan-box div:first-child{
+    background-color: ghostwhite;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.plan-box div:last-child{
+    text-align: center;
+    border: 0
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #ba923c;
+}
+.plan-price span{
+    font-size:30%;
+    font-weight: normal;
+}
+.plan-price-meal{
+    font-size: 80%;
+}
+.plan-box ul{
+    list-style: none;
+}
+.plan-box ul li{
+    padding:5px 0;
+}
 
