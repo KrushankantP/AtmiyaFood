@@ -1,3 +1,7 @@
+/* --------------------------------------------------
+ Basic Setup
+----------------------------------------------------*/
+
 * {
     margin:0;
     padding: 0;
@@ -16,19 +20,7 @@ html{
     margin: 0 auto;
 }
 
-header{
-background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(css-img/bg-img.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-.bg-img-text-box{
-    position: absolute;
-    width:1140px;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-}
+/* -----Headings ----*/
 
 h1{
     margin-top:0;
@@ -41,6 +33,8 @@ h1{
     word-spacing: 4px;
 }
 
+/*------Buttons-------*/
+
 .btn:link,
 .btn:visited{
     display: inline-block;
@@ -52,29 +46,76 @@ h1{
 }
 .btn-full:link,
 .btn-full:visited{
-    background-color: #c7a151;
-    border:1px solid #c7a151;
+    background-color: #ba923c;
+    border:1px solid #ba923c;
     color: #ffffff;
     margin-right: 15px;
 }
 
 .btn-outline:link,
 .btn-outline:visited{
-    border:1px solid #c7a151;
-    color: #cba85e;
+    border:1px solid #ba923c;
+    color: #ba923c;
 }
 
 .btn:hover,
 .btn:active {
-    background-color: #ba923c;
+    background-color: #c7a151;
 }
 .btn-full:hover,
 .btn-full:active{
-    border: 1px solid #ba923c;
+    border: 1px solid #c7a151;
 }
 
 .btn-outline:hover,
 .btn-outline:active{
-    border: 1px solid #ba923c;
+    border: 1px solid #c7a151;
     color:#ffffff;
+}
+
+/* --------------------------------------------------
+Header Components
+----------------------------------------------------*/
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(css-img/bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.bg-img-text-box{
+    position: absolute;
+    width:1140px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float:left;
+    margin-top:20px;
+}
+.main-nav{
+    float:right;
+    list-style:none;
+    margin-top: 55px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding:8px 0;
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom:2px solid transparent;
+    transition:border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #ba923c;
 }
