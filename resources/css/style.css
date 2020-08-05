@@ -175,8 +175,8 @@ input[type=submit]:active{
 ----------------------------------------------------*/
 
 header{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(css-img/bg-img.jpg);
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(css-img/bg-img.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(css-img/bg-img-min.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(css-img/bg-img-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -381,8 +381,8 @@ MEALS
     TESTIMONIALS
 ----------------------------------------------------*/
 .section-testimonials{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(css-img/back-customers.jpg);
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(css-img/back-customers.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(css-img/back-customers-min.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(css-img/back-customers-min.jpg);
     background-size: cover;
     color:whitesmoke;
     background-attachment: fixed;
