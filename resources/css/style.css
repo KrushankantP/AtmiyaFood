@@ -52,7 +52,7 @@ h1{
     letter-spacing: 1px;
 }
 h2{
-    font-size: 240%;
+    font-size: 180%;
     word-spacing: 4px;
     text-align: center;
     margin-bottom: 30px;
@@ -110,11 +110,12 @@ h2:after{
 
 /*------Links-------*/
 a:link,
-a:active{
+a:visited{
     color: #ba923c;
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px solid #ba923c;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 a:hover,
@@ -132,6 +133,7 @@ input[type=submit]{
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition:background-color 0.2s, border 0.2s, color 0.2s;
 }
 .btn-full:link,
@@ -169,10 +171,11 @@ input[type=submit]:active{
 }
 
 /* --------------------------------------------------
-Header Components
+    Header
 ----------------------------------------------------*/
 
 header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(css-img/bg-img.jpg);
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(css-img/bg-img.jpg);
     background-size: cover;
     background-position: center;
@@ -183,6 +186,8 @@ header{
     width:1140px;
     top:50%;
     left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 .logo{
@@ -191,11 +196,13 @@ header{
     float:left;
     margin-top:20px;
 }
+/* Main nav */
 .main-nav{
     float:right;
     list-style:none;
     margin-top: 55px;
 }
+
 .main-nav li{
     display: inline-block;
     margin-left: 40px;
@@ -208,6 +215,7 @@ header{
     text-transform: uppercase;
     font-size: 90%;
     border-bottom:2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition:border-bottom 0.2s;
 }
 .main-nav li a:hover,
@@ -248,21 +256,28 @@ MEALS
     opacity: 0.7;
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
     transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
 }
 .meal-photo img:hover{
     opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
 
 /* --------------------------------------------------
-    How IT Works
+    How IT Works Section
 ----------------------------------------------------*/
 .section-steps{
     background-color:white;
 }
-
+.steps-box{
+    margin-top: 30px;
+}
 .steps-box:first-child{
     text-align:right;
     padding-right: 3%;
@@ -273,7 +288,7 @@ MEALS
     margin-top:70px;
 }
 .app-screen{
-    width: 30%;
+    width: 40%;
 }
 .works-step{
     margin-bottom: 50px;
@@ -322,15 +337,16 @@ MEALS
     TESTIMONIALS
 ----------------------------------------------------*/
 .section-testimonials{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(css-img/back-customers.jpg);
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(css-img/back-customers.jpg);
     background-size: cover;
-    color: #fff;
+    color:whitesmoke;
     background-attachment: fixed;
 }
 blockquote{
     padding: 2%;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: 100;
     line-height: 145%;
     position: relative;
     margin-top:40px;
@@ -460,6 +476,7 @@ footer{
     text-decoration: none;
     border:0;
     color:#888;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 .footer-nav li a:hover,
@@ -474,7 +491,8 @@ footer{
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram{
-
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
 }
 
 .ion-social-facebook:hover{
